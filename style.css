@@ -9,32 +9,39 @@ body {
 .slidecontainer {
     position: absolute;
     top: 50%;
+    height: 100%;
     width: 100%; /* Width of the outside container */
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 .swipe {
     -webkit-appearance: none;  /* Override default CSS styles */
     appearance: none;
     width: 100%; /* Full-width */
     height: 100%; /* Specified height */
-    background: #d3d3d3; /* Grey background */
+    background: transparent;
     outline: none; /* Remove outline */
-    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
-    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
-    transition: opacity .2s;
     z-index: 9999;
 }
 .swipe::-webkit-slider-thumb {
     -webkit-appearance: none; /* Override default look */
     appearance: none;
-    width: 25px; /* Set a specific slider handle width */
-    height: 100%; /* Slider handle height */
-    background: #4CAF50; /* Green background */
-    cursor: pointer; /* Cursor on hover */
+    width: 50px; /* Set a specific slider handle width */
+    height: 50px; /* Slider handle height */
+    border-radius: 25px;
+    background: url('arrow.png');
+    background-size: contain;
+    border: 3px solid black;
+    cursor: ew-resize; /* Cursor on hover */
+
 }
 
 .swipe::-moz-range-thumb {
-    width: 25px; /* Set a specific slider handle width */
-    height: 25px; /* Slider handle height */
-    background: #4CAF50; /* Green background */
-    cursor: pointer; /* Cursor on hover */
+    width: 50px; /* Set a specific slider handle width */
+    height: 50px; /* Slider handle height */
+    border-radius: 25px;
+    background: url('arrow.png');
+    background-size: contain;
+    border: 3px solid black;
+    cursor: ew-resize; /* Cursor on hover */
 }
