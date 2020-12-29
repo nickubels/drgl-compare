@@ -61,3 +61,33 @@ body {
     pointer-events: none;
     z-index: 99;
 }
+
+.years{
+    background-color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
+}
+
+.old{
+    position: absolute;
+    left: 0;
+    margin-left: -19px;
+    bottom: 50%;
+    height: 30px;
+    width: 67px;
+    transform: rotate(-90deg);
+    z-index: 80;
+}
+
+.new{
+    position: absolute;
+    right: 0;
+    margin-right: -17px;
+    bottom: 50%;
+    height: 30px;
+    width: 65px;
+    transform: rotate(90deg);
+    z-index: 80;
+}
