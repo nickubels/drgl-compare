@@ -3,25 +3,30 @@ body {
     margin: 0;
 }
 #map {
+    position: absolute;
     height: 100%;
     width: 100%;
 }
+
 .slidecontainer {
     position: absolute;
+    left: 0;
+    right: 0;
     top: 50%;
-    height: 100%;
-    width: 100%; /* Width of the outside container */
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+    z-index: 999;
 }
 .swipe {
     -webkit-appearance: none;  /* Override default CSS styles */
     appearance: none;
-    width: 100%; /* Full-width */
-    height: 100%; /* Specified height */
+    position: absolute;
+    left:0;
+    right: 0;
+    top: 0;
+    bottom: 0;
     background: transparent;
     outline: none; /* Remove outline */
-    z-index: 9999;
 }
 .swipe::-webkit-slider-thumb {
     -webkit-appearance: none; /* Override default look */
@@ -33,7 +38,6 @@ body {
     background-size: contain;
     border: 3px solid black;
     cursor: ew-resize; /* Cursor on hover */
-
 }
 
 .swipe::-moz-range-thumb {
@@ -44,4 +48,16 @@ body {
     background-size: contain;
     border: 3px solid black;
     cursor: ew-resize; /* Cursor on hover */
+}
+
+.divider{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+    width: 4px;
+    background-color: black;
+    pointer-events: none;
+    z-index: 99;
 }

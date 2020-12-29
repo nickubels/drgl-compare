@@ -24,11 +24,14 @@ var map =  new ol.Map({
 });
 
 var swipe = document.getElementById('swipe');
+var divider = document.getElementById('divider');
 
 layer2.on('prerender', function (event) {
   var ctx = event.context;
   var mapSize = map.getSize();
-  var width = mapSize[0] * (swipe.value / 100);
+  var offset = (0.5 - swipe.value) * (53); // size of thumb + border size
+  var width = mapSize[0] * swipe.value + offset;
+  divider.style.left = width + 'px';
   var tl = ol.render.getRenderPixel(event, [width, 0]);
   var tr = ol.render.getRenderPixel(event, [mapSize[0], 0]);
   var bl = ol.render.getRenderPixel(event, [width, mapSize[1]]);
@@ -53,6 +56,7 @@ swipe.addEventListener(
   'input',
   function () {
     map.render();
+    console.log(swipe.value)
   },
   false
 );
