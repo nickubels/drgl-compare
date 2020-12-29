@@ -2,7 +2,7 @@ var layer1 = new ol.layer.Tile({
     source: new ol.source.XYZ({
         attributions: "Test",
         url: './2020/{z}/{y}/{x}.png',
-        maxZoom: 20,
+        maxZoom: 6,
     })
 });
 
@@ -10,7 +10,7 @@ var layer2 = new ol.layer.Tile({
     source: new ol.source.XYZ({
         attributions: "Test",
         url: './2021/{z}/{y}/{x}.png',
-        maxZoom: 20,
+        maxZoom: 6,
     })
 });
 
