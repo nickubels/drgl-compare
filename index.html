@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wijziging dienstregeling 2020/2021</title>
+        <meta name="description" content="Interactieve kaart om de lijnnetkaarten van 2020 en 2021 voor Groningen Stad te vergelijken">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/css/ol.css" type="text/css">
+        <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/build/ol.js"></script>
+    </head>
+    <body>
+        <div id="map" class="map"></div>
+        <div class="divider" id="divider"></div>
+        <div class="old years" id="old">2020</div>
+        <div class="new years" id="new">2021</div>
+        <div class="slidecontainer">
+        <input id='swipe' class="swipe" class='range' type='range' min="0", max="1", step="any", value="0.5"/>
+        </div>
+        <script src="scripts.js"></script>
+    </body>
+</html>

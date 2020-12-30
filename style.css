@@ -1,0 +1,88 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+#map {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.slidecontainer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 999;
+}
+.swipe {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    position: absolute;
+    left:0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: transparent;
+    outline: none; /* Remove outline */
+}
+.swipe::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 50px; /* Set a specific slider handle width */
+    height: 50px; /* Slider handle height */
+    border-radius: 25px;
+    background: url('arrow.png');
+    background-size: contain;
+    border: 3px solid black;
+    cursor: ew-resize; /* Cursor on hover */
+}
+
+.swipe::-moz-range-thumb {
+    width: 50px; /* Set a specific slider handle width */
+    height: 50px; /* Slider handle height */
+    border-radius: 25px;
+    background: url('arrow.png');
+    background-size: contain;
+    border: 3px solid black;
+    cursor: ew-resize; /* Cursor on hover */
+}
+.divider{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+    width: 4px;
+    background-color: black;
+    pointer-events: none;
+    z-index: 99;
+}
+.years{
+    background-color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
+}
+.old{
+    position: absolute;
+    left: 0;
+    margin-left: -19px;
+    bottom: 50%;
+    height: 30px;
+    width: 67px;
+    transform: rotate(-90deg);
+    z-index: 80;
+}
+.new{
+    position: absolute;
+    right: 0;
+    margin-right: -17px;
+    bottom: 50%;
+    height: 30px;
+    width: 65px;
+    transform: rotate(90deg);
+    z-index: 80;
+}
