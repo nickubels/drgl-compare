@@ -1,6 +1,7 @@
 body {
     padding: 0;
     margin: 0;
+    width: 100%;
 }
 #map {
     position: absolute;
@@ -15,10 +16,13 @@ body {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     z-index: 999;
+    width: 100%;
 }
 .swipe {
     -webkit-appearance: none;  /* Override default CSS styles */
     appearance: none;
+    width: 100%;
+    margin: 0;
     position: absolute;
     left:0;
     right: 0;
