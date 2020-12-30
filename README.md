@@ -6,6 +6,8 @@ When I noticed the 2020 and 2021 network maps of Groningen City had the same ext
 This project is a quick proof of concept with both the 2020 and 2021 network maps next to each other and an interactive 
 slider and zoom functionality.
 
+![Screenshot of the map](screenshot.png)
+
 ## The process
 One of the biggest challenges was converting the two maps, that were provided as PDFs on the operators website, into 
 a tileset for use in a web map. My first attempt was to import the PDF into QGIS, georeference it and export to XYZ tiles.
