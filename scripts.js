@@ -5,8 +5,7 @@ var attributions = "Ontwikkeling: <a href='http://nickubels.nl'>Nick Ubels</a> -
 var layer1 = new ol.layer.Tile({
     source: new ol.source.XYZ({
         attributions: attributions,
-        url: './2020/{z}/{y}/{x}.jpg',
-        maxZoom: 6,
+        url: './2020/{z}/{y}/{x}.jpg'
     })
 });
 
@@ -14,8 +13,7 @@ var layer1 = new ol.layer.Tile({
 var layer2 = new ol.layer.Tile({
     source: new ol.source.XYZ({
         attributions: attributions,
-        url: './2021/{z}/{y}/{x}.jpg',
-        maxZoom: 6,
+        url: './2021/{z}/{y}/{x}.jpg'
     })
 });
 
@@ -26,7 +24,7 @@ var map =  new ol.Map({
     view: new ol.View({
         center: [-10.7, 6.5],
         zoom: 4,
-        maxZoom: 6 // Limit the zoom capability as there are only 6 levels
+        maxZoom: 5 // 5 zoomlevels available in tile set
     })
 });
 
