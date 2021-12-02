@@ -5,7 +5,7 @@ var attributions = "Ontwikkeling: <a href='http://nickubels.nl'>Nick Ubels</a> -
 var layer1 = new ol.layer.Tile({
     source: new ol.source.XYZ({
         attributions: attributions,
-        url: './2020/{z}/{y}/{x}.jpg'
+        url: './2021/{z}/{y}/{x}.jpg'
     })
 });
 
@@ -13,7 +13,7 @@ var layer1 = new ol.layer.Tile({
 var layer2 = new ol.layer.Tile({
     source: new ol.source.XYZ({
         attributions: attributions,
-        url: './2021/{z}/{y}/{x}.jpg'
+        url: './2022/{z}/{y}/{x}.jpg'
     })
 });
 
